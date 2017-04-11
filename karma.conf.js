@@ -11,7 +11,8 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require('@angular/cli/plugins/karma'),
-      require('karma-htmlfile-reporter') //insert this code
+      require('karma-htmlfile-reporter'), //insert this code
+      require('karma-junit-sonarqube-reporter')
     ],
     client:{
       clearContext: false // leave Jasmine Spec Runner output visible in browser
@@ -34,7 +35,7 @@ module.exports = function (config) {
     },
     reporters: config.angularCli && config.angularCli.codeCoverage
               ? ['progress', 'coverage-istanbul']
-              : ['progress', 'kjhtml','html'],
+              : ['progress', 'kjhtml','html','junit'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
@@ -53,5 +54,11 @@ module.exports = function (config) {
       useCompactStyle: true,
       useLegacyStyle: true
     },
+
+    // the default configuration
+    junitReporter: {
+      outputFile: 'teste-report-xml/results.xml',
+      suite: ''
+    }
   });
 };

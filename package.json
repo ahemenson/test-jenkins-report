@@ -39,6 +39,8 @@
     "karma-htmlfile-reporter": "^0.3.5",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-junit-sonarqube-reporter": "0.0.1",
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
