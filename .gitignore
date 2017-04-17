@@ -5,6 +5,10 @@
 /tmp
 /out-tsc
 
+# reports folder
+/teste-report-xml
+/test-report
+
 # dependencies
 /node_modules
 
