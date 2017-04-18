@@ -9,6 +9,10 @@
 /teste-report-xml
 /test-report
 
+# coverage output
+/coverage
+
+
 # dependencies
 /node_modules
 
